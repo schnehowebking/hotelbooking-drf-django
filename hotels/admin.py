@@ -11,3 +11,5 @@ class AdminRoom(admin.ModelAdmin):
 admin.site.register(Hotel, AdminHotel)
 admin.site.register(Room, AdminRoom)
 admin.site.register(Review)
+admin.site.register(ContactUs)
+admin.site.register(PreBookRequest)
