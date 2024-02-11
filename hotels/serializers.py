@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Hotel, Room, Review
+from .models import *
 
 class HotelSerializer(serializers.ModelSerializer):
     class Meta:
@@ -14,4 +14,17 @@ class RoomSerializer(serializers.ModelSerializer):
 class ReviewSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review
+        fields = '__all__'
+
+
+
+class PreBookRequestSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = PreBookRequest
+        fields = '__all__'
+
+
+class ContactUSSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ContactUs
         fields = '__all__'

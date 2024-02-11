@@ -1,6 +1,6 @@
 from rest_framework import viewsets, generics
-from .models import Hotel, Review
-from .serializers import HotelSerializer, RoomSerializer, ReviewSerializer
+from .models import *
+from .serializers import *
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -45,3 +45,13 @@ class ReviewListCreate(generics.ListCreateAPIView):
 class ReviewDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
+
+
+
+class PreBookRequestCreateAPIView(generics.CreateAPIView):
+    queryset = PreBookRequest.objects.all()
+    serializer_class = PreBookRequestSerializer
+
+class ContactUsCreateAPIView(generics.CreateAPIView):
+    queryset = ContactUs.objects.all()
+    serializer_class = ContactUSSerializer
