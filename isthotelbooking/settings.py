@@ -19,7 +19,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-CSRF_TRUSTED_ORIGINS = ['https://isthotelbookingdrf.onrender.com/', 'http://127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://isthotelbookingdrf.onrender.com', 'http://127.0.0.1:8000']
 
 
 # Quick-start development settings - unsuitable for production
