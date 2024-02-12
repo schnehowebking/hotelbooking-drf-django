@@ -14,22 +14,22 @@ This is a simple hotel booking website where users can explore hotels, leave rev
 
 ## Features
 
-### User Registration and Authentication (20 Marks)
+### User Registration and Authentication 
 
 - User registration with email verification
 - User login and logout functionality
 
-### Hotel Detail Page (20 Marks)
+### Hotel Detail Page 
 
 - Display detailed information about each hotel
 - Show hotel name, address, photos, and reviews
 
-### Hotel Booking and Confirmation (25 Marks)
+### Hotel Booking and Confirmation
 
 - Allow users to book hotels using deposited money
 - Send confirmation email for booked hotels
 
-### Hotel Reviews (25 Marks)
+### Hotel Reviews 
 
 - Authenticated users can leave reviews for hotels
 - Each review includes a rating and a text comment
