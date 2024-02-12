@@ -1,99 +1,66 @@
-# live Link:
+# Hotel Booking API
 
+## Description
 
-( pip freeze | sed 's/==.*$//' > requirements.txt )
+This is a simple hotel booking website where users can explore hotels, leave reviews, and manage their accounts. The website offers the following features:
 
+1. **User Registration and Authentication**: Users can register, log in, and log out. Upon registration, users receive an email verification link to activate their accounts.
 
+2. **Hotel Detail Page**: Detailed information about each hotel is displayed on a dedicated page. This includes the hotel name, address, photos, and reviews.
 
-# IST Cloth Store
+3. **Hotel Booking and Confirmation**: Users can book hotels using their deposited money. Upon booking, users receive a confirmation email for their reservation.
 
-Welcome to IST Cloth Store, an online clothing store built using Django. This web application allows users to register, verify their email, login, logout, manage their wallet balance, and purchase clothing items with various features for a seamless shopping experience.
-
-## Table of Contents
-
-- [Features](#features)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Support](#support)
+4. **Hotel Reviews**: Authenticated users can leave reviews for hotels they have stayed at. Each review includes a rating and a text comment. Only the author of a review can modify or remove it.
 
 ## Features
 
-1. **User Authentication:**
-   - Register an account with email verification.
-   - Login and Logout securely.
+### User Registration and Authentication (20 Marks)
 
-2. **Wallet Management:**
-   - Users can add balance to their wallet for convenient and quick purchases.
+- User registration with email verification
+- User login and logout functionality
 
-3. **Product Purchase:**
-   - Buy individual products or all items in the cart.
-   - Seamless checkout process.
+### Hotel Detail Page (20 Marks)
 
-4. **Product Management:**
-   - Sort products by price, popularity, and other criteria.
-   - Search for products by name or keyword.
-   - Filter products by category, size, and color.
+- Display detailed information about each hotel
+- Show hotel name, address, photos, and reviews
 
-## Setup
+### Hotel Booking and Confirmation (25 Marks)
 
-1. **Clone the Repository:**
-   ``` 
-   git clone https://github.com/your-username/IST-Cloth-Store.git
-   cd IST-Cloth-Store
-2. Create Virtual Environment:
-   ```
-   python -m venv venv
-3. Activate Virtual Environment:
+- Allow users to book hotels using deposited money
+- Send confirmation email for booked hotels
 
-1. On Windows:
-   ```
-   .\venv\Scripts\activate
-2. On macOS/Linux:
-   ```
-   source venv/bin/activate
-4. Install Dependencies:
-   ```
-   pip install -r requirements.txt
-5. Database Migration:
-   ```
-   python manage.py migrate
-6. Create Superuser:
-   ```
-   python manage.py createsuperuser
-7. Run the Development Server:
-   ```
-   python manage.py runserver
+### Hotel Reviews (25 Marks)
 
+- Authenticated users can leave reviews for hotels
+- Each review includes a rating and a text comment
+- Users can only modify or remove their own reviews
 
-Now Visit http://localhost:8000/ in your browser.
+## User Account Management
 
-## Usage
-Register an Account:
+- Users can manage their accounts by updating profile information
+- Users can reset passwords if forgotten
+- Users can view their booking history
 
-Visit the registration page and follow the instructions to verify your email.
-Login:
+## Technologies Used
 
-Use your credentials to log in.
+- **Frontend**: HTML, CSS, JavaScript, Bootstrap
+- **Backend**: Django (Python)
+- **Database**: SQLite (for development), PostgreSQL (for production)
+- **Authentication**: Django Authentication System with Email Verification
+- **Email**: SMTP (Simple Mail Transfer Protocol) for sending verification emails
+- **Payment Gateway**: Integration with a payment gateway for hotel bookings
 
-Add Balance:
+## How to Run
 
-Navigate to the wallet section to add balance to your account.
-Explore and Purchase:
+1. Clone the repository.
+2. Set up the Django environment and install dependencies.
+3. Run database migrations.
+4. Start the Django development server.
+5. Access the website through the provided URL.
 
-Browse products, filter, and sort as needed.
-Add items to your cart and proceed to checkout.
-Logout:
+## Future Improvements
 
-Logout securely when done.
-
-
-## Screenshots
-
-<img src="./sss/ss1.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss2.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss3.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss4.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss5.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss6.png" width="350" alt="schnehowebking" />  <img  src="./sss/ss7.png" width="350" alt="schnehowebking" />
-
-
-## Support
-<p><a href="https://www.buymeacoffee.com/schnehowebking"> 
-  <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="schnehowebking" /></a>
-</p>
+- Implement OAuth for social media login.
+- Enhance the user interface for a better user experience.
+- Add more features such as hotel search and filtering options.
+- Integrate with a real payment gateway for booking transactions.
