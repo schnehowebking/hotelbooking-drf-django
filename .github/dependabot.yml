@@ -1,0 +1,31 @@
+version: 2
+updates:
+  # Enable Dependabot version updates for pip
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "03:00"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "schnehowebking"
+    labels:
+      - "dependencies"
+      - "security"
+    commit-message:
+      prefix: "chore(deps):"
+      prefix-development: "chore(deps-dev):"
+      include: "scope"
+
+  # Enable Dependabot security updates
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    security-updates-only: true
+    reviewers:
+      - "schnehowebking"
+    labels:
+      - "security"
+      - "critical"
